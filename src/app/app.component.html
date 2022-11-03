@@ -1,6 +1,22 @@
   <div style="text-align:center">
     
-    <div>{{title}}</div>
-    <div>dhanesh</div>
+    <div >{{values}}</div>
 
+    <!-- property binding  -->
+    <button [disabled]=disablebutton>button</button>
+
+    <!-- <button onclick=" printvalue">click</button> -->
   </div>
+
+  <table>
+    <thead>
+      <td>Emp Name</td>
+      <td style="padding-left: 20px;">Designation</td>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of Employees">
+        <td >{{x.name}}</td>
+        <td style="padding-left: 20px;">{{x.designation}}</td>
+      </tr>
+    </tbody>
+  </table>
