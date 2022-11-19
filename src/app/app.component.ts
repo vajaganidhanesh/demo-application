@@ -9,7 +9,7 @@ export class AppComponent {
 
   title = 'demo';
   disablebutton:boolean = true;
-  values:string = " ";
+  values:string = "hello world!... ";
 
   Employees=[
     {name:"dhanesh",designation:"web developer"},
@@ -20,8 +20,14 @@ export class AppComponent {
   ]
 
   printvalue(){
-    this.values = "hello dhanesh"
+    this.values = "hey it's me dhanesh"
     console.log("hello");
+    this.disablebutton = false
     
   }
+
+   assignValues(){
+
+  }  
 }
+
